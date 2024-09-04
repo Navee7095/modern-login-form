@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url("digital-art-moon-deer-wallpaper_23-2150918789.avif") no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            width: 400px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 15px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        .login-header span {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .input_box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .input_box input {
+            width: 100%;
+            padding: 10px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .input_box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .input_box input:focus ~ label,
+        .input_box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #03a9f4;
+            font-size: 12px;
+        }
+
+        .input_box .icon {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            color: #03a9f4;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .remember-forgot label {
+            cursor: pointer;
+        }
+
+        .forgot {
+            color: #03a9f4;
+            text-decoration: none;
+        }
+
+        .forgot:hover {
+            text-decoration: underline;
+        }
+
+        .input-submit {
+            background: #03a9f4;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            color: #fff;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .input-submit:hover {
+            background: #0288d1;
+        }
+
+        .register {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register a {
+            color: #03a9f4;
+            text-decoration: none;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-header">
+            <span>Login</span>
+        </div>
+        <form>
+            <div class="input_box">
+                <input type="text" id="user" class="input-field" required>
+                <label for="user" class="label">Username</label>
+                <i class="bx bx-user icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="password" id="pass" class="input-field" required>
+                <label for="pass" class="label">Password</label>
+                <i class="bx bx-lock-alt icon"></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" id="remember"> Remember me</label>
+                <a href="#" class="forgot">Forgot password?</a>
+            </div>
+            <div class="input_box">
+                <input type="submit" class="input-submit" value="Login">
+            </div>
+            <div class="register">
+                <span>Don't have an account? <a href="#">Register</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
