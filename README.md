@@ -27,6 +27,8 @@ Simple and intuitive layout with clearly labeled fields and buttons for easy nav
 **Technology Stack:**
 
 HTML5: For structuring the form elements and overall page layout.
+
 CSS3: For styling the form, including modern effects and responsive design.
+
 Background Image: Integrated a custom background image to enhance the UI/UX.
 
